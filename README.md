@@ -50,7 +50,7 @@ RULE-SET,https://cdn.jsdelivr.net/gh/bluee1111/egern-muse-proxy@main/muse.list,P
 |---|---|
 | 核心 | `muse.ai`、`meta.ai` |
 | 内容 CDN | `metaaiusercontent.com`、`ecto1usercontent.com` |
-| 登录 / 账号 | `facebook.com`、`fbsbx.com` |
+| 登录 / 账号 | `facebook.com`、`fbsbx.com`、`accountscenter.meta.com` |
 | 媒体 CDN | `fbcdn.net`、`cdninstagram.com`、`instagram.com`、`cdn.whatsapp.net` |
 | 内嵌小应用 | `meta-agents-apps.workers.dev` |
 | 可选支付 | `api.stripe.com` 等（默认注释） |
