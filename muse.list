@@ -20,6 +20,8 @@ DOMAIN-SUFFIX,ecto1usercontent.com
 # ── Meta 账号登录 / OAuth / GraphQL
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,fbsbx.com
+# 账号中心（老账号可能跳这里做二次验证）
+DOMAIN,accountscenter.meta.com
 
 # ── 媒体资源 CDN（头像、贴图、语音、视频）
 DOMAIN-SUFFIX,fbcdn.net
