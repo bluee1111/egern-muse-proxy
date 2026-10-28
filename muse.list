@@ -1,0 +1,41 @@
+# ======================================================
+# Muse (Meta AI Agent) → PROXY
+# 规则集格式：Surge / Shadowrocket / Egern 通用（不带策略，引用时指定）
+# 来源：muse.ai 线上 CSP 头（connect-src / img-src / frame-src）+ 实测 DNS
+# 更新：2026-10-28
+# 说明：muse.ai 及其子域全部 CNAME 到 star.c10r.facebook.com，
+#       国内直连不通（Meta 段被墙），必须走代理。
+# ======================================================
+
+# ── 核心：Muse 主域（含 api / platform / auth / introducing / security 等子域）
+DOMAIN-SUFFIX,muse.ai
+
+# ── Meta AI 后端与长连接（gateway / edge-chat / edge-chat-latest / shortwave 的 wss）
+DOMAIN-SUFFIX,meta.ai
+
+# ── Muse 生成内容 CDN（h. / s. / cf. 前缀的图片、文件）
+DOMAIN-SUFFIX,metaaiusercontent.com
+DOMAIN-SUFFIX,ecto1usercontent.com
+
+# ── Meta 账号登录 / OAuth / GraphQL
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,fbsbx.com
+
+# ── 媒体资源 CDN（头像、贴图、语音、视频）
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,cdninstagram.com
+
+# ── 用 Instagram 账号登录 Muse 时需要
+DOMAIN-SUFFIX,instagram.com
+
+# ── 聊天里分享的 WhatsApp 媒体（只 CDN，不影响 WhatsApp 本体）
+DOMAIN-SUFFIX,cdn.whatsapp.net
+
+# ── 可选：Muse 内嵌第三方小应用（Meta 官方 workers.dev 子域）
+DOMAIN-SUFFIX,meta-agents-apps.workers.dev
+
+# ── 可选：Muse 内支付（Stripe）。不订阅可注释掉
+# DOMAIN,api.stripe.com
+# DOMAIN,js.stripe.com
+# DOMAIN,hooks.stripe.com
+# DOMAIN,m.stripe.network
