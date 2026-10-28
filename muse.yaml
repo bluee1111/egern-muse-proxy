@@ -12,6 +12,7 @@ domain_suffix_set:
   # 登录 / 账号
   - facebook.com
   - fbsbx.com
+  - accountscenter.meta.com
   # 媒体 CDN
   - fbcdn.net
   - cdninstagram.com
