@@ -1,0 +1,28 @@
+# Muse (Meta AI Agent) 规则集 — Egern 原生格式
+# 用法：rules 里用 rule_set 引用本文件，policy 填你的代理/策略组名
+# 更新：2026-10-28
+no_resolve: true
+
+domain_suffix_set:
+  # 核心
+  - muse.ai
+  - meta.ai
+  - metaaiusercontent.com
+  - ecto1usercontent.com
+  # 登录 / 账号
+  - facebook.com
+  - fbsbx.com
+  # 媒体 CDN
+  - fbcdn.net
+  - cdninstagram.com
+  - instagram.com
+  - cdn.whatsapp.net
+  # 内嵌小应用（可删）
+  - meta-agents-apps.workers.dev
+
+# 可选：Muse 内支付（Stripe），不订阅就把下面 4 行取消注释
+domain_set: []
+#  - api.stripe.com
+#  - js.stripe.com
+#  - hooks.stripe.com
+#  - m.stripe.network
